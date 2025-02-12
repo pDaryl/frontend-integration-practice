@@ -1,0 +1,27 @@
+p {
+    color: red;
+}
+
+#btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+.btn{
+    padding: 10px 10px 10px 10px;
+}
+
+.num {
+    font-size: larger;
+}
