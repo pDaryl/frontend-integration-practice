@@ -8,4 +8,5 @@ function randomColor(){
 
 function changeColor(){
     document.body.style.backgroundColor = randomColor();
+    document.getElementById("theColor").innerText = randomColor()
 }
