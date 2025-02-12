@@ -3,24 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter</title>
-    <link rel="stylesheet" href="counterStyle.css">
+    <title>background color changer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="counter">
-        <p id="num">Counter: 0</p>
+    <div id="container">
+        <button type="button" id="colorChanger" onclick="changeColor()">
+            change background
+        </button>
     </div>
-    <div id="btn-container">
-    <div id="up">
-        <button type="button" class="btn" onclick="countUp()">Up</button>
-    </div> <br>
-    <div id="down">
-        <button type="button" class="btn" onclick="countDown()">Down</button>
-    </div> <br>
-    <div id="reset">
-        <button type="button" class="btn" onclick="reset()">Reset</button>
-    </div> <br>
-</div>
-    <script src="counterLogic.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 </html>

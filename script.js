@@ -1,21 +1,11 @@
-let counter = 0;
-const counterDisplay = document.getElementById("num")
+function randomColor(){
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
 
-function updateCounter(){
-    counterDisplay.innerText = `Counter: ${counter}`;
+    return `rgb(${r}, ${g}, ${b})`;
 }
 
-function countUp(){
-    ++counter;
-    updateCounter();
-}
-
-function countDown(){
-   --counter;
-   updateCounter();
-}
-
-function reset(){
-    counter = 0;
-    updateCounter();
+function changeColor(){
+    document.body.style.backgroundColor = randomColor();
 }

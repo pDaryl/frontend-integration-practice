@@ -1,27 +1,23 @@
-p {
-    color: red;
-}
-
-#btn-container {
+body {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    height: 100vh;
+    transition: background 0.5 ease;
 }
 
-#counter {
-    display: flex;
-    flex-direction: row;
+#container {
     align-items: center;
-    justify-content: center;
-    margin-top: 180px;
 }
 
-.btn{
-    padding: 10px 10px 10px 10px;
-}
-
-.num {
+button {
+    border: solid black 1px;
     font-size: larger;
+    transition: 0.3s
 }
+
+button:hover{
+    background: #005f73;
+}
+
+
