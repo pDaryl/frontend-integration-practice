@@ -1,12 +1,15 @@
 const text = document.getElementById("text");
-const button = document.getElementById("btn");
+const increaseBtn = document.getElementById("increase");
+const decreaseBtn = document.getElementById("decrease");
 
-function manipulateText(){
-    if(text.style.display === "none"){
-        text.style.display = "block";
-        button.innerText = "Hide text"; 
-    } else {
-        text.style.display = "none";
-        button.innerText = "Show text";
-    }
-}
+var fontSize = 16;
+
+increaseBtn.addEventListener("click", function(){
+    fontSize += 2;
+    text.style.fontSize = fontSize + "px";
+})
+
+decreaseBtn.addEventListener("click", function(){
+    fontSize -= 2;
+    text.style.fontSize = fontSize + "px";
+})
